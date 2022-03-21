@@ -16,6 +16,7 @@ export default function AboutSection() {
                             <div className='slice_about_content_div'>
                                 <div className='slice_about_contents'>
                                     <h2>Head Title</h2>
+                                    <hr />
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus illum labore voluptatum facilis dolorem dicta a accusamus soluta tenetur fuga quis placeat odit quod, cum vero asperiores? Iure, cum earum.</p>
                                     <button>About Us</button>
                                 </div>
