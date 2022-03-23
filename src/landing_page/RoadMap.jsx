@@ -4,14 +4,17 @@ import { Col, Container, Row } from 'react-bootstrap'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Phase from './sub_component/Phase';
+import PhaseInverted from './sub_component/PhaseInverted';
 
 const options = {
-    nav: true,
+    nav: false,
     items: 1,
+    margin: 0,
     rewind: true,
-    autoplay: false,
+    autoplay: true,
     slideBy: 1,
-    dots: true,
+    dots: false,
     dotsEach: false,
     dotData: false,
     smartSpeed: 1000,
@@ -50,57 +53,30 @@ export default function RoadMap() {
                     <Row>
                         <Col lg={12}>
                             <div>
-                                <OwlCarousel className='owl-theme' loop margin={10} {...options}>
+                                <OwlCarousel className='owl-theme slice_roadMap_carousel' loop margin={10} {...options}>
                                     <div className='item'>
-                                        <div className='slice_roadMap_mainDiv'>
-                                            <div className='phase_date'>
-                                                <h5>00 March 2022</h5>
-                                            </div>
-                                            <div className='phase_bars'>
-                                                <div className='phase_main_bar'></div>
-                                                <div className='phase_indication_bar'></div>
-                                                <div className="phase_dot">
-                                                    <div className="phase_innerDot"></div>
-                                                </div>
-                                            </div>
-                                            <div className='phase_content'>
-                                                <h3>Phase</h3>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur in, ut necessitatibus accusantium porro.</p>
-                                            </div>
-                                        </div>
+                                        <Phase />
                                     </div>
                                     <div className='item'>
-                                        <h4>2</h4>
+                                        <PhaseInverted />
                                     </div>
                                     <div className='item'>
-                                        <h4>3</h4>
+                                        <Phase />
                                     </div>
                                     <div className='item'>
-                                        <h4>4</h4>
+                                        <PhaseInverted />
                                     </div>
                                     <div className='item'>
-                                        <h4>5</h4>
+                                        <Phase />
                                     </div>
                                     <div className='item'>
-                                        <h4>6</h4>
+                                        <PhaseInverted />
                                     </div>
                                     <div className='item'>
-                                        <h4>7</h4>
+                                        <Phase />
                                     </div>
                                     <div className='item'>
-                                        <h4>8</h4>
-                                    </div>
-                                    <div className='item'>
-                                        <h4>9</h4>
-                                    </div>
-                                    <div className='item'>
-                                        <h4>10</h4>
-                                    </div>
-                                    <div className='item'>
-                                        <h4>11</h4>
-                                    </div>
-                                    <div className='item'>
-                                        <h4>12</h4>
+                                        <PhaseInverted />
                                     </div>
                                 </OwlCarousel>
                             </div>

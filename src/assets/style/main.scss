@@ -1,5 +1,10 @@
 @import './common/_navbar';
 @import './landingPage/_landing';
+@import './common//_footer';
+
+//site authentication
+@import './siteAuthentication/_login';
+
 // @font-face {
 //     font-family: 'Sora', sans-serif;
 //     src:  url('../font/static/Sora-Regular.ttf'),

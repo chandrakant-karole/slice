@@ -1,0 +1,69 @@
+@import '../utility/colors.scss'; 
+
+.slice_team_section{
+            background-image: linear-gradient(45deg, #080834, rgba(0,33,126,.9)), url('../../images/roadmap.jpg');
+            background-size: cover;
+            padding: 100px 0px;
+
+    .slice_team_Head{
+
+        h2{
+            margin-left: auto;
+            margin-right: auto;
+            color: $commonText;
+            background: -webkit-linear-gradient(45deg, #5D88F8, #00FFE0);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            width: fit-content;
+            font-weight: 600;
+        }
+
+        hr{
+            color: aqua;
+            margin-bottom: 40px;
+        }
+    }
+
+    .slice_team_carousel{
+
+        .slice_team_member{
+            border: 1px dashed cyan;
+            border-radius: 5px;
+            padding: 40px 0px;
+            box-shadow: 0px 0px 5px cyan;
+            background-color: rgba(0,5,77,.6);
+
+            .team_member_pic{
+                display: flex;
+                justify-content: center;
+
+                img{
+                    width: 100px;
+                    border-radius: 50%;
+                    border: 2px solid #005299;
+                }
+            }
+
+            .team_member_details{
+                text-align: center;
+                color: $commonText;
+            }
+
+            .team_member_social{
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                
+                svg{
+                    color: rgba(0,225,224,.6);
+
+                    &:hover{
+                    color: rgba(0,225,224,1);
+                    }
+
+                }
+            }
+        }
+    }
+}

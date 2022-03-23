@@ -1,0 +1,36 @@
+@import '../utility/colors.scss';
+
+.slice_login_section{
+    background-image: linear-gradient(45deg, #000000, rgba(0,0,0,.9)), url('../../images/form-bg.png');
+    background-size: cover;
+    padding: 100px 0px;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        z-index: -1;
+    }
+
+    .slice_login_form{
+        background-image: radial-gradient(at top, #444444, #01041C);
+        padding: 40px 20px;
+
+        .slice_login_form_head{
+            color: $commonText;
+        }
+
+        .slice_loginForm{
+
+            input{
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid #999999;
+            }
+        }
+    }
+}
