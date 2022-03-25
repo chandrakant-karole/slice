@@ -1,11 +1,19 @@
 @import '../utility/colors.scss';
 
-.slice_login_section{
+@mixin inputFields {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #999999;
+    padding-left: 25px;
+    color: #999999;
+}
+
+.slice_signUp_section{
     background-image: linear-gradient(45deg, #000000, rgba(0,0,0,.85)), url('../../images/form-bg.png');
     background-size: cover;
     padding: 100px 0px;
     position: relative;
-    height: 100vh;
+    height: 100%;
 
     &::before{
         content: "";
@@ -17,17 +25,17 @@
         z-index: -1;
     }
 
-    .slice_login_form{
+    .slice_signUp_form{
         background-image: radial-gradient(at top, #444444, #01041C);
         padding: 40px;
         border-radius: 10px;
         border-bottom: 5px solid #00ffe1b4;
 
-        .slice_login_form_head{
+        .slice_signUp_form_head{
             color: $commonText;
         }
 
-        .slice_loginForm{
+        .slice_signUpForm{
 
             .email_field_div{
 
@@ -45,12 +53,54 @@
                 }
             }
 
+            .select_country_field_div{
+
+                svg{
+                    color: #999999;
+                    margin-bottom: -30px;
+                }
+            }
+
+            .select_country_field_div{
+
+                select{
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid #999999;
+                    padding-left: 25px;
+                    color: #6c7475;
+                    border-radius: 0px;
+
+                    option{
+                        background-color: #1d1e2d;  
+                    }
+
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            input[type=text]{
+                @include inputFields;
+
+                &:focus-within{
+                    outline: none;
+                    border-bottom: 1px solid aqua;
+                }
+            }
+
+            input[type=tel]{
+                @include inputFields;
+
+                &:focus-within{
+                    outline: none;
+                    border-bottom: 1px solid aqua;
+                }
+            }
+
             input[type=email]{
-                background: transparent;
-                border: none;
-                border-bottom: 1px solid #999999;
-                padding-left: 25px;
-                color: #999999;
+                @include inputFields;
 
                 &:focus-within{
                     outline: none;
@@ -59,11 +109,7 @@
             }
 
             input[type=password]{
-                background: transparent;
-                border: none;
-                border-bottom: 1px solid #999999;
-                padding-left: 25px;
-                color: #999999;
+                @include inputFields;
 
                 &:focus-within{
                     outline: none;
@@ -81,7 +127,7 @@
             }
         }
 
-        .slice_login_form_foot{
+        .slice_signUp_form_foot{
             display: flex;
             justify-content: space-between;
 

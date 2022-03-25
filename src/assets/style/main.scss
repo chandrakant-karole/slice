@@ -3,7 +3,10 @@
 @import './common//_footer';
 
 //site authentication
-@import './siteAuthentication/_login';
+@import './siteAuthentication/_main';
+
+//site dashboard
+@import './dashboard/_main';
 
 // @font-face {
 //     font-family: 'Sora', sans-serif;
