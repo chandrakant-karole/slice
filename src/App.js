@@ -8,6 +8,7 @@ import ForgetPassword from './site_authentication/ForgetPassword';
 import Login from './site_authentication/Login';
 import SignUp from './site_authentication/SignUp';
 import DashHome from './dashboard/home/DashHome';
+import Wallet from './dashboard/home/Wallet';
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
           <Route path='/signup' element={<SignUp />} />
           <Route path='/forget_password' element={<ForgetPassword />} />
           <Route path='/dashboard' element={<DashHome />} />
+          <Route path='/wallet' element={<Wallet/>} />
         </Routes>
       </BrowserRouter>
       {/* <Footer /> */}

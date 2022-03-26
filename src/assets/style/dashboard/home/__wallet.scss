@@ -1,0 +1,142 @@
+@import '../../utility/colors.scss';
+
+@mixin btn($bg, $border, $text) {
+    background-color: $bg;
+    border: 1px solid $border;
+    padding: 5px 20px;
+    color: $text;
+    text-decoration: none;
+    width:50%; 
+    text-align: center;
+    margin: 0px 4px;
+}
+
+.slice_wallet_section{
+
+
+    .slice_flat_wallet{
+        padding: 20px;
+        box-shadow: 0px 0px 15px 10px rgb(128 138 157 / 30%);
+        border-radius: 8px;
+        margin: 20px 0px;
+
+        .flat_wallet_head{
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .flat_wallet_total_balance{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+
+            .flat_wallet_total_title{
+                display: flex;
+
+                svg{
+                    font-size: 1.4em;
+                    margin: 0px 10px;
+                    color: #808a9d;
+                }
+
+                h5{
+                    letter-spacing: 0px;
+                    color: #808a9d;
+                }
+            }
+
+            .flat_wallet_total_value{
+                    text-align: end;
+
+                h5{
+                    letter-spacing: 0px;
+                    margin-bottom: 0px;
+                    font-weight: bold;
+                    color: #808a9d;
+                }
+
+                .flat_wallet_total_value_text{
+                    font-weight: bold;
+                    color: #808a9d;
+                }
+            }
+        }
+
+        .flat_wallet_amount_comparison{
+
+            ul{
+                list-style-type: none;
+
+                li{
+
+                    .wallet_amount_currency_value{
+                        display: flex;
+                        color: #808a9d;
+
+                        .currency_name{
+                            font-weight: bold;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .flat_wallet_Btn{
+            display: flex;
+
+            .add_fund_btn{
+                @include btn(#00aa6a, #00aa6a, #ffffff)
+            }
+
+            .withdraw_btn{
+                @include btn(#343b42, #343b42, #ffffff)
+            }
+        }
+
+    }
+
+    .slice_transaction_history{
+
+        ul{
+            list-style-type: none;
+
+            li{
+                padding: 20px 10px;
+                background-color: #e7e7e7;
+
+                &:nth-child(even){
+                    background-color: #ffffff;
+                }
+
+                .transaction_history_details{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+
+                    .transaction_history_amount{
+                        text-align: end;
+
+                        .amount_text{
+                            font-weight: bold;
+                        }
+
+                        .status{
+                            background-color: #EA3943;
+                            border-radius: 5px;
+                            padding: 1px 10px;
+                            color: #ffffff;
+                            font-size: .60em;
+                        }
+                        .status.completed{
+                            background-color: #00aa6a;
+                        }
+                    }
+                }
+            }
+        }
+
+     
+    }
+}

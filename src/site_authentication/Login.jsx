@@ -23,7 +23,9 @@ export default function Login() {
                                             <FontAwesomeIcon icon={faLock} />
                                             <input className='col-12' type="password" placeholder='Password' />
                                         </div>
-                                        <input type="submit" value="Login" />
+                                        {/* <input type="submit" value="Login" /> */}
+                                        {/* ========= remove below anchor tag ========== */}
+                                        <Link className='login_btn_temporary' to="/dashboard">Login</Link>
                                     </form>
                                 </div>
                                 <div className='slice_login_form_foot'>

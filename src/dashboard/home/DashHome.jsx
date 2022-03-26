@@ -5,6 +5,7 @@ import coin from '../../assets/images/coin.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretUp, faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import Footer from '../common/Footer'
+import { Link } from 'react-router-dom'
 export default function Home() {
     return (
         <>
@@ -57,6 +58,10 @@ export default function Home() {
                                         </DropdownButton>
                                     </div>
                                 </div>
+                                <div className='slice_buy_sell_btn my-2'>
+                                    <Link to="/" className='buy_btn'>Buy</Link>
+                                    <Link to="/" className='sell_btn'>Sell</Link>
+                                </div>
                             </div>
                         </Col>
                     </Row>
@@ -103,16 +108,236 @@ export default function Home() {
                         </div>
                     </Row>
                     <Row>
-                        <div className='slice_buy_sell_section'>
-                            <Tabs defaultActiveKey="buy" id="uncontrolled-tab-example" className="mb-3">
-                                <Tab eventKey="buy" title="Buy">
-                                   <p>1Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, eaque.</p>
-                                </Tab>
-                                <Tab eventKey="sell" title="Sell">
-                                   <p>2Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, eaque.</p>
-                                </Tab>
-                            </Tabs>
-                        </div>
+                        <Col lg={6}>
+                            <div className='slice_buy_sell_section'>
+                                <Tabs defaultActiveKey="buy" id="uncontrolled-tab-example" className="mb-3 slice_list_tabs">
+                                    <Tab eventKey="buy" title="Buy">
+                                        <ul className='slice_buy_list_ul'>
+                                            <li className='slice_buy_list_li'>
+                                                <div className='token_details'>
+                                                    <div className='token_name_details'>
+                                                        <div className='token_image'>
+                                                            <Image src={coin} fluid />
+                                                        </div>
+                                                        <div className='token_name'>
+                                                            <span className='token_name_text'>Sliceledger</span>
+                                                            <span className='token_name_date'>20-Feb-2022, 08:05 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div className='token_value_details'>
+                                                        <div className='token_quantity'>
+                                                            <span className='token_quantity_text'>Qty :</span>
+                                                            <span className='token_quantity_value'> 500000</span>
+                                                        </div>
+                                                        <div className='token_price'>
+                                                            <span className='token_price_text'>Price :</span>
+                                                            <span className='token_price_value'> ₹36100</span>
+                                                        </div>
+                                                        <div className='token_total'>
+                                                            <span className='token_total_text'>Total :</span>
+                                                            <span className='token_total_value'> ₹36100</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li className='slice_buy_list_li'>
+                                                <div className='token_details'>
+                                                    <div className='token_name_details'>
+                                                        <div className='token_image'>
+                                                            <Image src={coin} fluid />
+                                                        </div>
+                                                        <div className='token_name'>
+                                                            <span className='token_name_text'>Sliceledger</span>
+                                                            <span className='token_name_date'>20-Feb-2022, 08:05 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div className='token_value_details'>
+                                                        <div className='token_quantity'>
+                                                            <span className='token_quantity_text'>Qty :</span>
+                                                            <span className='token_quantity_value'> 500000</span>
+                                                        </div>
+                                                        <div className='token_price'>
+                                                            <span className='token_price_text'>Price :</span>
+                                                            <span className='token_price_value'> ₹36100</span>
+                                                        </div>
+                                                        <div className='token_total'>
+                                                            <span className='token_total_text'>Total :</span>
+                                                            <span className='token_total_value'> ₹36100</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li className='slice_buy_list_li'>
+                                                <div className='token_details'>
+                                                    <div className='token_name_details'>
+                                                        <div className='token_image'>
+                                                            <Image src={coin} fluid />
+                                                        </div>
+                                                        <div className='token_name'>
+                                                            <span className='token_name_text'>Sliceledger</span>
+                                                            <span className='token_name_date'>20-Feb-2022, 08:05 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div className='token_value_details'>
+                                                        <div className='token_quantity'>
+                                                            <span className='token_quantity_text'>Qty :</span>
+                                                            <span className='token_quantity_value'> 500000</span>
+                                                        </div>
+                                                        <div className='token_price'>
+                                                            <span className='token_price_text'>Price :</span>
+                                                            <span className='token_price_value'> ₹36100</span>
+                                                        </div>
+                                                        <div className='token_total'>
+                                                            <span className='token_total_text'>Total :</span>
+                                                            <span className='token_total_value'> ₹36100</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li className='slice_buy_list_li'>
+                                                <div className='token_details'>
+                                                    <div className='token_name_details'>
+                                                        <div className='token_image'>
+                                                            <Image src={coin} fluid />
+                                                        </div>
+                                                        <div className='token_name'>
+                                                            <span className='token_name_text'>Sliceledger</span>
+                                                            <span className='token_name_date'>20-Feb-2022, 08:05 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div className='token_value_details'>
+                                                        <div className='token_quantity'>
+                                                            <span className='token_quantity_text'>Qty :</span>
+                                                            <span className='token_quantity_value'> 500000</span>
+                                                        </div>
+                                                        <div className='token_price'>
+                                                            <span className='token_price_text'>Price :</span>
+                                                            <span className='token_price_value'> ₹36100</span>
+                                                        </div>
+                                                        <div className='token_total'>
+                                                            <span className='token_total_text'>Total :</span>
+                                                            <span className='token_total_value'> ₹36100</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </Tab>
+                                    <Tab eventKey="sell" title="Sell">
+                                    <ul className='slice_buy_list_ul'>
+                                            <li className='slice_buy_list_li'>
+                                                <div className='token_details'>
+                                                    <div className='token_name_details'>
+                                                        <div className='token_image'>
+                                                            <Image src={coin} fluid />
+                                                        </div>
+                                                        <div className='token_name'>
+                                                            <span className='token_name_text'>Sliceledger</span>
+                                                            <span className='token_name_date'>20-Feb-2022, 08:05 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div className='token_value_details'>
+                                                        <div className='token_quantity'>
+                                                            <span className='token_quantity_text'>Qty :</span>
+                                                            <span className='token_quantity_value'> 500000</span>
+                                                        </div>
+                                                        <div className='token_price sell_text'>
+                                                            <span className='token_price_text'>Price :</span>
+                                                            <span className='token_price_value'> ₹36100</span>
+                                                        </div>
+                                                        <div className='token_total'>
+                                                            <span className='token_total_text'>Total :</span>
+                                                            <span className='token_total_value'> ₹36100</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li className='slice_buy_list_li'>
+                                                <div className='token_details'>
+                                                    <div className='token_name_details'>
+                                                        <div className='token_image'>
+                                                            <Image src={coin} fluid />
+                                                        </div>
+                                                        <div className='token_name'>
+                                                            <span className='token_name_text'>Sliceledger</span>
+                                                            <span className='token_name_date'>20-Feb-2022, 08:05 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div className='token_value_details'>
+                                                        <div className='token_quantity'>
+                                                            <span className='token_quantity_text'>Qty :</span>
+                                                            <span className='token_quantity_value'> 500000</span>
+                                                        </div>
+                                                        <div className='token_price sell_text'>
+                                                            <span className='token_price_text'>Price :</span>
+                                                            <span className='token_price_value'> ₹36100</span>
+                                                        </div>
+                                                        <div className='token_total'>
+                                                            <span className='token_total_text'>Total :</span>
+                                                            <span className='token_total_value'> ₹36100</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li className='slice_buy_list_li'>
+                                                <div className='token_details'>
+                                                    <div className='token_name_details'>
+                                                        <div className='token_image'>
+                                                            <Image src={coin} fluid />
+                                                        </div>
+                                                        <div className='token_name'>
+                                                            <span className='token_name_text'>Sliceledger</span>
+                                                            <span className='token_name_date'>20-Feb-2022, 08:05 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div className='token_value_details'>
+                                                        <div className='token_quantity'>
+                                                            <span className='token_quantity_text'>Qty :</span>
+                                                            <span className='token_quantity_value'> 500000</span>
+                                                        </div>
+                                                        <div className='token_price sell_text'>
+                                                            <span className='token_price_text'>Price :</span>
+                                                            <span className='token_price_value'> ₹36100</span>
+                                                        </div>
+                                                        <div className='token_total'>
+                                                            <span className='token_total_text'>Total :</span>
+                                                            <span className='token_total_value'> ₹36100</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li className='slice_buy_list_li'>
+                                                <div className='token_details'>
+                                                    <div className='token_name_details'>
+                                                        <div className='token_image'>
+                                                            <Image src={coin} fluid />
+                                                        </div>
+                                                        <div className='token_name'>
+                                                            <span className='token_name_text'>Sliceledger</span>
+                                                            <span className='token_name_date'>20-Feb-2022, 08:05 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div className='token_value_details'>
+                                                        <div className='token_quantity'>
+                                                            <span className='token_quantity_text'>Qty :</span>
+                                                            <span className='token_quantity_value'> 500000</span>
+                                                        </div>
+                                                        <div className='token_price sell_text'>
+                                                            <span className='token_price_text'>Price :</span>
+                                                            <span className='token_price_value'> ₹36100</span>
+                                                        </div>
+                                                        <div className='token_total'>
+                                                            <span className='token_total_text'>Total :</span>
+                                                            <span className='token_total_value'> ₹36100</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </Tab>
+                                </Tabs>
+                            </div>
+                        </Col>
                     </Row>
                 </Container>
             </section>

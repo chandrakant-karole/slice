@@ -71,13 +71,17 @@
                 }
             }
 
-            input[type=submit]{
+            input[type=submit],.login_btn_temporary{ //remove this temp class
                 margin: 20px 0px;
                 width: 100%;
                 background-image: linear-gradient(45deg, #004E58, #007A70);
                 color: $commonText;
                 border: none;
                 padding: 5px;
+                ///temporary code for anchor
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
             }
         }
 
